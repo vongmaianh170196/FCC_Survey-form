@@ -1,0 +1,44 @@
+body{
+    margin: 0 auto;
+    background-color: rgb(3, 74, 75);
+    padding-left: 15%;
+    padding-right: 15%;
+    font-family: Tahoma;
+}
+h1, p{
+    text-align: center;
+}
+.container{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: white;
+}
+form{
+    margin: 0 0;
+}
+
+ td {
+    padding:2%;
+    line-height: 1.5;
+    vertical-align: top;
+}
+.label {
+    text-align: right;
+}
+input typing, textarea{
+    width: 70%;
+}
+input{
+    padding: 2%;
+}
+#submit-btn{
+    background-color: rgb(3, 74, 75);
+    color: antiquewhite;
+    padding: 3%;
+    font-size: 1.2rem;
+    border: no-border;
+    border-radius: 10%;
+}
+h1{
+    color: antiquewhite;
+}

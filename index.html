@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    
+    <!-- My own style -->
+    <link href="style.css" rel="stylesheet"> 
+
+    <title>Survey-form FCC</title>
+  </head>
+  <body>
+      <header>
+          <h1 id="title">
+              Survey Form
+          </h1>
+      </header>
+      <div class="container">
+          <p id="description">
+              Let us know how we can improve FreeCodeCamp
+          </p>
+          <form id="form-survey" action="./index.html">
+            <table>
+                <tr>
+                    <td class="label">
+                        <label for="name" id="name-label">Name:</label>
+                    </td>
+                    <td>
+                        <input class="typing" id="name" type="text" placeholder="Enter your name " required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label"> 
+                        <label for="email" id="email-label">Email:</label>
+                    </td>
+                    <td>
+                        <input id="email" class="typing" type="email"  placeholder="example@gmail.com " required/>
+                    </td>
+                </tr>
+                <tr>
+                     <td class="label">
+                        <label for="number" id="number-label">Age:</label>
+                    </td>
+                    <td>
+                        <input id="number" class="typing" type="number" min="1"  required/>
+                    </td>
+                </tr>
+                <tr>
+                     <td class="label">
+                        <label  for="dropdown" >Which option that describes best your current role?</label>
+                    </td>
+                    <td>
+                        <select name="roles" id="dropdown">
+                            <option value="selected" selected>Select an option</option>
+                            <option value="student">Student</option>
+                            <option value="fulltimelearner">Full-time learner</option>
+                            <option value="fulltimejob">Full-time job</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                     <td class="label">
+                        <label  for="recommend">How likely is that you would recommend freeCodeCamp to a friend?</label>
+                    </td>
+                    <td>
+                        <input id="recommend" type="radio" name="recommend" value="definitely"/> Definitely.<br>
+                        <input id="recommend" type="radio" name="recommend" value="maybe"/> Maybe.<br>
+                        <input id="recommend" type="radio" name="recommend" value="notsure"/> Not sure.<br>                     
+                    </td>
+                </tr>
+                <tr>
+                     <td class="label"> 
+                        <label  for="dropdown-like" >What do you like most in FreeCodeCamp?</label>
+                    </td>
+                    <td>
+                        <select name="like" id="dropdown-like">
+                            <option value="selected" selected>Select an option</option>
+                            <option value="community">Community</option>
+                            <option value="projects">Projects</option>
+                            <option value="challenges">Challenges</option>
+                            <option value="opensource">Open source</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">
+                        <label  for="improve">Things that should be improved in the future
+                                (Check all that apply):</label>
+                    </td>
+                    <td>
+                        <input id="improve" type="checkbox" name="frontend" value="frontend"/> Front-end Projects.<br>
+                        <input id="improve" type="checkbox" name="backend" value="backend"/> Back-end Projects.<br>
+                        <input id="improve" type="checkbox" name="datavis" value="datavis"/> Data Visualization.<br>
+                        <input id="improve" type="checkbox" name="challenges" value="challenges"/> Challenges.<br>
+                        <input id="improve" type="checkbox" name="opencommu" value="opencommu"/> Open source community.<br>
+                        <input id="improve" type="checkbox" name="helproom" value="helproom"/> Gitter help rooms.<br>
+                        <input id="improve" type="checkbox" name="video" value="video"/> Videos.<br>
+                        <input id="improve" type="checkbox" name="meetup" value="meetup"/> City Meetups.<br>
+                        <input id="improve" type="checkbox" name="wiki" value="wiki"/> Wiki.<br>
+                        <input id="improve" type="checkbox" name="forum" value="forum"/> Forum.<br>
+                        <input id="improve" type="checkbox" name="addcour" value="addcour"/> Additional courses.<br>
+
+                    </td>
+                </tr>
+                <tr>
+                     <td class="label">
+                        <label  for="comment">Any comments or suggestions?</label>
+                    </td>
+                    <td>
+                        <textarea id="comment"  rows="4" cols="40" placeholder="Enter your comments here... "></textarea>
+                    </td>
+                </tr><tr>
+                        <td></td>
+                        <td>
+                            <button id="submit-btn" type="submit" target="_self" >Submit</button>
+                        </td>
+                    </tr>
+            </table>
+            
+            
+              
+          </form>
+
+        </div>
+  </body>
+</html>
